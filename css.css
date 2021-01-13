@@ -1,0 +1,115 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+body {
+    background-image: linear-gradient( rgb(240, 240, 240), rgb(153, 153, 153));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  
+
+}
+.container{
+   /* background-image: linear-gradient(to bottom right, rgb(83, 180, 245), rgb(6, 113, 184));
+   */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%; 
+   
+
+}
+.card{
+    background-image: linear-gradient(to bottom right, rgb(136, 51, 248), rgb(117, 25, 129));
+    box-shadow: 0 20px 20px rgb(0, 0, 0,0.2), 0 0 50px rgb(0, 0, 0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    min-height: 80vh;
+    transform-style: preserve-3d;
+  
+    width: 35rem;
+
+}
+.sneaker{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sneaker img{
+    transition: all 0.2s ease-out;
+    width: 20rem;
+z-index: 2;
+}
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgb(248, 45, 140,0.7),
+        rgb(217, 238, 96,0.7)
+        
+    );
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+
+}
+.info h1{
+    font-size: 3rem;
+    transition: all 0.2s ease-out;
+}
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    transition: all 0.2s ease-out;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.2s ease-out;
+}
+.sizes button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(219, 215, 215);
+}
+button.active{
+    background: rgb(208, 255, 0);
+    color: rgb(0, 0, 0);
+}
+.purchase{
+    margin-top: 5rem;
+    transition: all 0.2s ease-out;
+}
+.purchase button{
+    width: 100%;
+  
+    padding: 1rem 0rem;
+    background: linear-gradient(
+        to right,
+        rgb(248, 45, 140,0.7),
+        rgb(217, 238, 96,0.7)
+        
+    );
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+
+
+}
